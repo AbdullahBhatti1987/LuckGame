@@ -1,0 +1,100 @@
+:root {
+    --main-light-color: #EDEDED;
+    --main-green-color: #91B5A9;
+    --main-blue-color: #94A3C4;
+    --main-dark-color: #29243B;
+    --main-yellow-color: #E0B271;
+    --main-facebook-color: #96A5C5;
+    --main-gray-color: #73878E;
+    --main-shadow-color: #D7DBDC;
+
+  }
+  
+body {
+    background-color: var(--main-light-color);
+  }
+  
+
+
+  .firstBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .firstBox h1, h2{
+    padding: 0px;
+    margin: 10px;
+  }
+
+  .diceNumber{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  .diceNumber p{
+    font-size: 50px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid var(--main-blue-color);
+    height: 100px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px var(--main-green-color);
+}
+
+.diceNumber p:hover{
+    background-color: var(--main-blue-color);
+    border: 1px solid transparent;
+}
+
+.info, .result{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.info p, .result p{
+    font-size: 30px;
+    padding: 15px;
+    border: 1px solid var(--main-blue-color);
+    height: 50px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 15px var(--main-yellow-color);
+    text-align: left;
+}
+.popup1{
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    border: 5px solid var(--main-yellow-color);
+    box-shadow: 0px 0px 15px var(--main-blue-color);
+    height: 500px;
+    width: 80%;
+    background-color: var(--main-blue-color);
+    margin: 0px auto;
+    opacity: 1;   
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+}
+.popup1 h1, h2{
+    text-align: center;
+}

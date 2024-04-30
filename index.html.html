@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luck Game</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="firstBox">
+        <h1>Try Your Luck!</h1>
+        <h2>Dice Game</h2>
+    </div>
+    <div class="info">
+        <p>User Number: <span id="userNumber"></span></p>
+        <p>Random Number: <span id="randoNumber"></span></p>
+        <p>Total Loss: <span id="totalLoss"></span></p>
+    </div>
+    <div class="result">
+        <p>User Turn:&nbsp<span id="userTurn"></span></p>
+        <p id="userStatus">Win or Loss</p>
+        <p>Total Win: <span id="totalWin"></span></p>
+    </div>
+    
+    <div class="diceNumber">
+        <p onclick="userInput(1)">1</p>
+        <p onclick="userInput(2)">2</p>
+        <p onclick="userInput(3)">3</p>
+        <p onclick="userInput(4)">4</p>
+        <p onclick="userInput(5)">5</p>
+        <p onclick="userInput(6)">6</p>
+    </div>
+    <div class="popup1" id="gameover">
+        <h1>Game Over</h1>
+    </div>
+    <div class="popup1" id="winner">
+        <h1>Congratulations</h1>
+        <h2>You Won</h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
